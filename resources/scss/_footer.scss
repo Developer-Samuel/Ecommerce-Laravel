@@ -1,0 +1,36 @@
+footer
+{
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background: $dark-grey-color;
+    z-index: 22;
+    top: 10vh;
+    p 
+    {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        color: $white-color;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .social
+    {
+        position: relative;
+        width: 120px;
+        transform: translateX(-100%);
+        left: 99.2%;
+        top: 10px;
+        justify-content: space-between;
+        display: flex;
+        a 
+        {
+            img 
+            {
+                width: 30px;
+            }
+        }
+    }
+}

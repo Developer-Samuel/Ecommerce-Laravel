@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1400px)
+{
+    .main-order
+    {
+        margin-top: -10vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 650px)
+{
+    .main-order
+    {
+        .order
+        {
+            width: 90%;
+            &__payment-method
+            {
+                tr
+                {
+                    td
+                    {
+                        .type, .price { font-size: 14px; }
+                        img { left: 40px; }
+                        .type { left: 90px;}
+                    }
+                }
+            }
+        }
+    }
+}

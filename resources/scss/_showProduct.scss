@@ -1,0 +1,513 @@
+.main-product-show
+{
+    position: relative;
+    width: 100%;
+    height: 220vh;
+    top: 10vh;
+
+    .go-back
+    {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 75%;
+    }
+
+    .product-show
+    {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 20.5%;
+        width: 60%;
+        height: 68vh;
+        box-shadow: 0 0 6px 1px $black-color;
+        &__image
+        {
+            position: absolute;
+            width: 40%;
+            height: 68vh;
+            img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__title
+        {
+            position: relative;
+            left: 40%;
+            width: 60%;
+            height: 50px;
+            margin-top: 10px;
+            overflow: hidden;
+            h1
+            {
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        hr
+        {
+            position: relative;
+            left: 45%;
+            top: 15px;
+            width: 50%;
+            border: none;
+            border-bottom: 1px solid $least-grey-color;
+        }
+        &__text
+        {
+            position: relative;
+            left: 42%;
+            top: 50px;
+            width: 56%;
+            height: 30vh;
+            overflow: hidden;
+            p
+            {
+                text-align: center;
+                font-size: 22px;
+            }
+        }
+        &__rate
+        {
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 70%;
+            top: 70%;
+            width: 60%;
+            text-align: center;
+            a
+            {
+                text-decoration: none;
+                color: $grey-color;
+                font-size: 34px;
+                &.active
+                {
+                    color: $green-color;
+                    &:hover { opacity: 1; }
+                }
+
+                &:hover { color: $green-color; opacity: 0.6; }
+            }
+
+        }
+        &__price
+        {
+            position: relative;
+            left: 40%;
+            top: 145px;
+            width: 60%;
+            height: 35px;
+            .oldprice
+            {
+                position: absolute;
+                transform: translate(-100%,-50%);
+                left: 46.8%;
+                top: 50%;
+                color: $grey-color;
+                text-decoration: line-through;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .newprice
+            {
+                position: absolute;
+                transform: translateY(-50%);
+                left: 48.8%;
+                top: 50%;
+                color: $green-color;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        &__hashtags
+        {
+            position: absolute;
+            transform: translateY(-100%);
+            left: 40%;
+            top: 89%;
+            margin-left: 15px;
+            a
+            {
+                margin: 0 5px;
+                text-decoration: none;
+                color: $black-color;
+            }
+        }
+        &__quantity
+        {
+            position: absolute;
+            transform: translate(-100%,-100%);
+            left: 95%;
+            top: 87%;
+            height: 60px;
+            label
+            {
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left: 90%;
+                top: 20%;
+            }
+            input
+            {
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left: 90%;
+                top: 65%;
+                width: 50px;
+                padding: 5px 0;
+                border: 1px solid $black-color;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button
+            {
+                cursor: pointer;
+            }
+        }
+        &__add
+        {
+            position: absolute;
+            transform: translateY(-100%);
+            left: 40%;
+            top: 100%;
+            width: 60%;
+            padding: 20px 0;
+            border: none;
+            background: $blue-color;
+            color: $white-color;
+            &:hover
+            {
+                background: $green-color;
+                transition: 0.8s;
+            }
+        }
+    }
+    .show-modal-div
+    {
+        position: relative;
+        left: 40%;
+        top: 65px;
+        width: 60%;
+        height: auto;
+        .show-modal
+        {
+            position: relative;
+            float: right;
+            margin-right: 25px;
+            width: auto;
+            background: none;
+            border: none;
+            color: $blue-color;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+    .modal
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: $black-color;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content
+    {
+        position: absolute;
+        top: 0%;
+        background: $white-color;
+        margin: auto;
+        padding: 40px 20px;
+        border: 1px solid #888;
+        width: 100%;
+        height: 100%;
+    }
+
+    .close
+    {
+        position: relative;
+        top: -30px;
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus
+    {
+        color: $black-color;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .comments-title
+    {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 33.4%;
+        top: 48.5%;
+    }
+    .reviews-title
+    {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 66.4%;
+        top: 48.5%;
+    }
+    .comments-reviews
+    {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 72%;
+        width: 60%;
+        height: 900px;
+        display: flex;
+        justify-content: space-between;
+        .comments
+        {
+            position: relative;
+            width: 45%;
+            height: 100%;
+
+            &-upper
+            {
+                position: absolute;
+                width: 100%;
+                height: 15%;
+                background: #eee;
+                &__questions
+                {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top: 7.5%;
+                    width: 250px;
+                    font-size: 28px;
+                    text-align: center;
+                }
+                &__add
+                {
+                    position: absolute;
+                    transform: translate(-50%,-100%);
+                    left: 50%;
+                    top: 90%;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 30px;
+                    background: $blue-color;
+                    color: $white-color;
+                    &:hover
+                    {
+                        background: $green-color;
+                        transition: 0.8s;
+                    }
+                }
+            }
+            &__list
+            {
+                position: absolute;
+                top: 15%;
+                width: 100%;
+                height: 85%;
+                list-style-type: none;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                &::-webkit-scrollbar { width: 1em; }
+                &::-webkit-scrollbar-thumb { background-color: darkgrey;}
+                li
+                {
+                    position: relative;
+                    padding: 5px;
+                    width: 100%;
+                    height: auto;
+                    img
+                    {
+                        position: absolute;
+                        width: 50px;
+                    }
+                    .comments-username
+                    {
+                        position: absolute;
+                        left: 13%;
+                        top: 10px;
+                        font-weight: bold;
+                    }
+                    .comments-answers
+                    {
+                        position: absolute;
+                        transform: translateX(-50%);
+                        left: 92.5%;
+                        width: 45px;
+                        height: 45px;
+                        img
+                        {
+                            position: absolute;
+                            width: 100%;
+                        }
+                        &-count
+                        {
+                            position: absolute;
+                            transform: translate(-50%,-50%);
+                            left: 92.5%;
+                            top: 42%;
+                            width: 100%;
+                            color: $white-color;
+                            font-weight: bold;
+                        }
+                    }
+                    .comments-text
+                    {
+                        position: relative;
+                        left: 12.5%;
+                        margin-top: 50px;
+                        padding: 0 60px 0 0;
+                    }
+                }
+            }
+        }
+
+        .reviews
+        {
+            position: relative;
+            width: 45%;
+            height: 100%;
+
+            &-upper
+            {
+                position: absolute;
+                width: 100%;
+                height: 15%;
+                background: #eee;
+
+                &__percent
+                {
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    left: 17.5%;
+                    top: 50%;
+                    font-size: 60px;
+                    font-weight: bold;
+                    sup
+                    {
+                        font-size: 30px;
+                    }
+                }
+                &__add
+                {
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    left: 50%;
+                    top: 50%;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 30px;
+                    background: $blue-color;
+                    color: $white-color;
+                    &:hover
+                    {
+                        background: $green-color;
+                        transition: 0.8s;
+                    }
+                }
+                &__rate
+                {
+                    position: relative;
+                    width: 20%;
+                    left: 70%;
+                    top: 5px;
+                    a
+                    {
+                        text-decoration: none;
+                        color: $green-color;
+                        font-size: 18px;
+                        cursor: context-menu;
+                    }
+                }
+                &__count
+                {
+                    position: relative;
+                    left: 92.5%;
+                    top: -117px;
+                    width: 10%;
+                    font-size: 16px;
+                    margin: 6px 0;
+                }
+            }
+
+            &__list
+            {
+                position: absolute;
+                top: 15%;
+                width: 100%;
+                height: 85%;
+                list-style-type: none;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                &::-webkit-scrollbar { width: 1em; }
+                &::-webkit-scrollbar-thumb { background-color: darkgrey;}
+                li
+                {
+                    position: relative;
+                    padding: 5px;
+                    width: 100%;
+                    height: auto;
+                    margin: 15px 0 0 0;
+                    border-bottom: 1px solid black;
+                    img
+                    {
+                        position: absolute;
+                        width: 50px;
+                    }
+                    .reviews-username
+                    {
+                        position: absolute;
+                        left: 13%;
+                        top: 10px;
+                        font-weight: bold;
+                    }
+                    .reviews-total_stars
+                    {
+                        position: absolute;
+                        transform: translateX(-50%);
+                        left: 6%;
+                        top: 60px;
+                        font-size: 18px;
+                    }
+                    a
+                    {
+                        position: absolute;
+                        transform: translateX(-50%);
+                        left: 6%;
+                        top: 70px;
+                        text-decoration: none;
+                        color: $green-color;
+                        font-size: 32px;
+                        cursor: context-menu;
+                    }
+                    .reviews-text
+                    {
+                        position: relative;
+                        left: 12.5%;
+                        margin-top: 25px;
+                        padding: 0 75px 0 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

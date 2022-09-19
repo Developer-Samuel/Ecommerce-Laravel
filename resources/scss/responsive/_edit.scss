@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1400px) 
+{ 
+    .main-edit 
+    {
+        height: 90vh;
+        &__title
+        {
+            top: 6vh;
+        }
+        .edit-form
+        {
+            top: 50%;
+            width: 720px;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1100px) 
+{ 
+    .main-edit
+    {
+        .edit-form { width: 600px; }
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{ 
+    .main-login-signup 
+    {
+        .edit-form { width: 420px; }
+    }
+}

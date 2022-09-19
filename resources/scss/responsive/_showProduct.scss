@@ -1,0 +1,211 @@
+@media only screen and (max-width: 1400px) 
+{ 
+    .main-product-show
+    {
+        height: 240vh;
+        margin-top: -10vh;
+        .product-show
+        {
+            top: 18%;
+            width: 80%;
+            &__rate { top: 71%; }
+            &__price { top: 130px;}
+        }
+        .comments-title { left: 29%; top: 42.5%; }
+        .reviews-title { left: 71%; top: 42.5%; }
+        .comments-reviews 
+        { 
+            top: 66.5%;
+            width: 80%; 
+            height: 1000px;
+            .comments 
+            { 
+                width: 47.5%; 
+                &-upper
+                {
+                    &__questions { font-size: 26px; }
+                    &__add
+                    {
+                        font-size: 12px;
+                    }
+                }
+                &__list
+                {
+                    li img { width: 40px; }
+                    li .comments-text
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .reviews 
+            { 
+                width: 47.5%; 
+                &-upper
+                {
+                    &__percent
+                    {
+                        font-size: 50px;
+                        sup
+                        {
+                            font-size: 25px;
+                        }
+                    }
+                    &__rate 
+                    { 
+                        left: 67.5%; 
+                        top: 15px; 
+                        width: 50%;
+                    } 
+                    &__count { top: -107px;}
+                    &__add
+                    {
+                        font-size: 12px;
+                    }
+                }
+                &__list
+                {
+                    li img { width: 40px; }
+                    li .reviews-text
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1100px) 
+{ 
+    .main-product-show
+    {
+        .product-show { width: 90%; }
+        .comments-title { left: 26.2%; }
+        .reviews-title { left: 73.6%; }
+        .comments-reviews { width: 90%; }
+    }
+
+}
+
+@media only screen and (max-width: 800px) 
+{ 
+    .main-product-show
+    {
+        .product-show
+        {
+            &__image { width: 50%; }
+            &__title 
+            {
+                left: 50%;
+                width: 50%;
+                h1 { font-size: 24px; }
+            }
+            hr 
+            {
+                left: 52.5%;
+                width: 45%;
+            }
+            &__text 
+            {
+                left: 52%;
+                width: 46%;
+                p { font-size: 16px; }
+            }
+            &__rate
+            {
+                left: 76%;
+                width: 50%;
+            }
+            &__price
+            {
+                left: 50%;
+                width: 50%;
+            }
+            &__hashtags
+            {
+                left: 50%;
+            }
+            &__quantity
+            {
+                left: 93%;
+                top: 90%;
+            }
+            &__add
+            {
+                left: 50%;
+                width: 50%;
+            }
+           
+        }
+        .show-modal-div .show-modal { font-size: 14px; }
+        .comments-reviews 
+        { 
+            .comments
+            {
+                &-upper
+                {
+                    &__questions { font-size: 20px; }
+                    &__add
+                    {
+                        top: 85%;
+                        padding: 10px;
+                    }
+                }
+                &__list
+                {
+                    li .comments-username { left: 17.5%; }
+                    li .comments-text { padding: 0 50px 0 10px; }
+                }
+            }
+            .reviews
+            {
+                &-upper
+                {
+                    &__percent
+                    {
+                        left: 27.5%;
+                        top: 30%;
+                        font-size: 54px;
+                        sup { font-size: 27px; }
+                    }
+                    &__add
+                    {
+                        left: 27.5%;
+                        top: 70%;
+                        padding: 10px;
+                    }
+                    &__rate { left: 55%; }
+                    &__count { left: 90%; }
+                }
+                &__list
+                {
+                    li .reviews-username { left: 17.5%; }
+                    li .reviews-text { padding: 0 50px 0 10px; }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 650px) 
+{
+    .main-product-show
+    {
+        .comments-reviews 
+        { 
+            .reviews
+            {
+                &-upper
+                {
+                    &__percent { left: 25%; }
+                    &__add { left: 25%; }
+                    &__rate { left: 50%; }
+                    &__count { left: 87.5%; }
+                }
+            }
+        }
+    }
+}

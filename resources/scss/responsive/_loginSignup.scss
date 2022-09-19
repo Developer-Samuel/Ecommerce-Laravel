@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1400px) 
+{ 
+    .main-login-signup 
+    {
+        height: 90vh;
+        &__title-login
+        {
+            top: 11vh;
+        }
+        &__title-signup
+        {
+            top: 2.5vh;
+        }
+        .login-form, .signup-form
+        {
+            top: 50%;
+            width: 720px;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1100px) 
+{ 
+    .main-login-signup 
+    {
+        .login-form, .signup-form
+        {
+            width: 600px;
+            &__logreg { font-size: 14px; }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{ 
+    .main-login-signup 
+    {
+        .login-form, .signup-form
+        {
+            width: 420px;
+            &__logreg 
+            { 
+                transform: translate(-50%,-50%);
+                left: 50%;
+            }
+        }
+    }
+}
